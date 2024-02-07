@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind : Deployment
+metadata:
+  name: webserver-deployment
+  labels:
+    app: webserver
+
+spec: 
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: webserver
+
+  template:
+    metadata:
+      labels:
+        app: webserver
+    spec:
+      containers:
+      - name: webserver
+        image: mongo-express:latest
+        ports:
+        - containerPort: 27017
+        env:
+        - name: ME_CONFIG_MONGODB_AUTH_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: webapp-secret
+              key: username
+        - name: ME_CONFIG_MONGODB_AUTH_PASSWORD 
+          valueFrom:
+            secretKeyRef:
+              name: webapp-secret
+              key: password
