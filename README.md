@@ -1,6 +1,6 @@
 # Kubernetes Project 🚀
 
-Welcome to our Kubernetes project repository! In this project, we successfully deployed and managed a containerized application using Kubernetes. Below, we'll outline the key components and techniques utilized throughout this project.
+Welcome to Kubernetes project repository! In this project, we successfully deployed and managed a containerized application using Kubernetes. Below, we'll outline the key components and techniques utilized throughout this project.
 
 ## Table of Contents
 
