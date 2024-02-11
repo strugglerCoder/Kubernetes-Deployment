@@ -9,6 +9,7 @@ Welcome to our Kubernetes project repository! In this project, we successfully d
 - [Interacting with Kubernetes](#interacting-with-kubernetes)
 - [Docker Images](#docker-images)
 - [Configuration Management](#configuration-management)
+- [Kubernetes Service](#kubernetes-service)
 
 ## Overview
 
@@ -38,9 +39,13 @@ Sensitive data such as credentials, API keys, and other configuration details we
 
 For storing non-sensitive configuration data in key-value pairs, we utilized Kubernetes ConfigMap. ConfigMap provided a flexible and scalable solution for managing configuration settings, allowing us to easily update and propagate configuration changes across our application.
 
+## Kubernetes Service
+
+We implemented Kubernetes Service for endpoint exposure, enabling seamless communication between microservices. Kubernetes Service acts as an abstraction layer that exposes a set of Pods as a network service, providing a stable endpoint for accessing the application internally or externally.
+
 ## Conclusion
 
-This project showcases the power and flexibility of Kubernetes for deploying and managing containerized applications. By leveraging Kubernetes Deployment, `kubectl` command-line tool, Docker images, Secrets, and ConfigMap, we were able to build a robust and scalable application infrastructure.
+This project showcases the power and flexibility of Kubernetes for deploying and managing containerized applications. By leveraging Kubernetes Deployment, `kubectl` command-line tool, Docker images, Secrets, ConfigMap, and Kubernetes Service, we were able to build a robust and scalable application infrastructure.
 
 Feel free to explore the repository and documentation for more insights into our Kubernetes project. If you have any questions or feedback, please don't hesitate to reach out!
 
