@@ -47,6 +47,5 @@ We implemented Kubernetes Service for endpoint exposure, enabling seamless commu
 
 This project showcases the power and flexibility of Kubernetes for deploying and managing containerized applications. By leveraging Kubernetes Deployment, `kubectl` command-line tool, Docker images, Secrets, ConfigMap, and Kubernetes Service, we were able to build a robust and scalable application infrastructure.
 
-Feel free to explore the repository and documentation for more insights into our Kubernetes project. If you have any questions or feedback, please don't hesitate to reach out!
 
 Thank you for visiting our repository! Happy Kubernetes coding! 🚀🐳
